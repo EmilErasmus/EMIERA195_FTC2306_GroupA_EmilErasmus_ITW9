@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Resume</title>
+  </head>
+  <body>
+    <header>
+      <h1>Emil Erasmus</h1>
+      <h2 id="job-title">Software Developer</h2>
+
+      <picture>
+        <source
+          id="emil-cropped"
+          media="(max-width: 600px)"
+          srcset="images/emil-cropped.jpg"
+          alt="emil-cropped"
+        />
+        <img id="emil-full" src="images/emil.jpg" alt="emil-full" />
+      </picture>
+
+      <p id="Intro-text">
+        Highly motivated and reliable professional with a passion for
+        development. Strong communication skills and a dedicated attitude
+        towards continuous learning and growth. Displaying adaptability to new
+        technologies and effective team collaboration, I consistently
+        demonstrate a strong work ethic, attention to detail, and a proactive
+        approach to problem-solving.
+      </p>
+
+      <nav id="nav-bar">
+        <ul>
+          <li>
+            <a href="#experience">Experience</a>
+          </li>
+          <li>
+            <a href="#education">Education</a>
+          </li>
+          <li>
+            <a href="#skills">Skills</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <br />
+
+    <main>
+      <article>
+        <section class="margin-bottom">
+          <h2 id="experience">Experience</h2>
+          <h3>Audio Technician, freelance</h3>
+          <p class="main-text">
+            This job involves setting up sound equipment and instruments,
+            troubleshooting and resolving potential issues before and during the
+            broadcast, and mixing, adjusting and enhancing the output to produce
+            a good sound before and during live performances.
+          </p>
+          <h3>Guitarist, freelance</h3>
+          <p class="main-text">
+            I have played at a variety of functions and events, performing solo
+            or with other musicians. I have also done solo recording where I
+            have played my own compositions, and session music which involves
+            lending my skills on songs that have already been written.
+          </p>
+        </section>
+
+        <section class="margin-bottom">
+          <h2 id="education">Education & Learning</h2>
+          <h3>
+            Intro To Web at
+            <a href="https://www.codespace.co.za/" target="_blank">
+              CodeSpace
+            </a>
+          </h3>
+          <p class="main-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <h3>
+            The Modern Python 3 Bootcamp at
+            <a href="https://www.udemy.com/" target="_blank"> Udemy </a>
+          </h3>
+          <p class="main-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </section>
+      </article>
+
+      <aside class="margin-bottom">
+        <h2 id="skills">Languages & Skills</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Python</li>
+          <li>JavaScript</li>
+          <li>Git and GitHub</li>
+          <li>Figma</li>
+        </ul>
+      </aside>
+    </main>
+
+    <footer>
+      <h2 id="contact">Contact Me</h2>
+
+      <form
+        action="https://formsubmit.co/d4e216f67ff07c9fd4df50b00f67ec19"
+        method="post"
+      >
+        <p>
+          <label for="first-name"></label>
+          <input
+            type="text"
+            name="first-name"
+            id="first-name"
+            placeholder="Name *"
+            autocomplete="off"
+            required
+          />
+        </p>
+        <p>
+          <label for="last-name"></label>
+          <input
+            type="text"
+            name="lastName"
+            id="lastName"
+            placeholder="Surname *"
+            autocomplete="off"
+            required
+          />
+        </p>
+        <p>
+          <label for="email"></label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email *"
+            required
+          />
+        </p>
+        <p>
+          <label for="phone"></label>
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="Phone"
+            pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+          />
+        </p>
+        <p>
+          <label for="subject"></label>
+          <select name="_subject" id="subject">
+            <option value="Business">Business</option>
+            <option value="Employment">Employment</option>
+            <option value="Discussion">Discussion</option>
+          </select>
+        </p>
+
+        <label for="message"></label>
+        <br />
+        <textarea
+          name="message"
+          id="message"
+          rows="15"
+          placeholder="Message me (optional)"
+        ></textarea>
+
+        <div class="form-button">
+          <button type="submit">Submit</button>
+        </div>
+
+        <p>* Required field</p>
+      </form>
+
+      <p id="footer-links">
+        <a
+          class="bottomLinks"
+          href="https://www.linkedin.com/in/emil-erasmus-333363275"
+          target="_blank"
+        >
+          LinkedIn
+        </a>
+        <a
+          class="bottomLinks"
+          href="https://github.com/EmilErasmus"
+          target="_blank"
+        >
+          GitHub
+        </a>
+      </p>
+    </footer>
+  </body>
+</html>
