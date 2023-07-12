@@ -1,0 +1,123 @@
+/* This stylesheet starts from the top of the html doc */
+
+body {
+  margin: 0;
+}
+
+/* Header */
+#banner {
+  text-align: center;
+  background-color: #4f4f4f;
+  background-image: url("../images/hero1.jpg");
+  background-size: cover;
+}
+
+img {
+  max-width: 25%;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+/* ========================================== */
+
+/* Main */
+aside {
+  background-color: #d9d9d9;
+  padding: 1em;
+}
+/* ========================================== */
+
+/* footer */
+footer {
+  padding-top: 2em;
+  background-color: #4f4f4f;
+  text-align: center;
+}
+form {
+  margin: 5% 20%;
+  padding: 2% 0%;
+  background-color: white;
+  border-radius: 10px;
+}
+/* input {
+    color: rgb(99, 99, 99);
+} */
+input,
+select,
+textarea,
+button {
+  color: black;
+  background-color: #bebebe;
+  padding: 0.8em 0.8em;
+  width: 60%;
+  height: auto;
+  border: solid 1px #999;
+  border-radius: 10px;
+}
+/* #subject {
+  width: 68%;
+} */
+button {
+  width: 30%;
+  color: white;
+  background-color: #4f4f4f;
+}
+::placeholder {
+  color: black;
+}
+#footer-links {
+  margin: 0;
+}
+/* Image properties */
+.linkedin-img,
+.github-img {
+  border: none;
+  padding: 2rem;
+  width: 40px;
+  height: 40px;
+}
+/* The animation code */
+@keyframes animatedIcon {
+  0% {
+    transform: ;
+    border-radius: 0;
+  }
+  30% {
+    transform: rotate(360deg);
+    border-radius: 50%;
+  }
+  100% {
+    transform: rotate(720deg);
+    border-radius: 0;
+  }
+}
+
+/* The element to apply the animation to */
+.linkedin-img:hover,
+.github-img:hover {
+  animation-name: animatedIcon;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+  animation-direction: normal;
+}
+/* ========================================== */
+
+/* Typography */
+#intro-text,
+#contact {
+  color: white;
+}
+
+h1,
+h2,
+h3 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+  font-weight: 450;
+}
+
+.main-text {
+  color: #464646;
+}
+
+/* General styling */
