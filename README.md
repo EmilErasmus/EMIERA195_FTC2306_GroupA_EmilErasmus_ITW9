@@ -1,5 +1,5 @@
 # Emil Erasmus Digital Resume
-This is my digital resume - a webpage that diplays who I am, my job title, work experience, education and skills. It also contains a form which users can fill out to get in contact with me. 
+This is my digital resume - a webpage that displays who I am, my job title, work experience, education and skills. It also contains a form which users can fill out to get in contact with me. 
 
 Wireframe:
 https://www.figma.com/file/s62Rwjbdhg7fysD2odKf3w/EMIERA195_FTC2306_GroupA_EmilErasmus_ITW9?type=design&node-id=0%3A1&mode=design&t=LUWq9twMOZwYNUiJ-1
