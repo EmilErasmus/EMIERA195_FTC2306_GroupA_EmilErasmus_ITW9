@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Digital Resume</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -32,23 +33,24 @@
           demonstrate a strong work ethic, attention to detail, and a proactive
           approach to problem-solving.
         </p>
-        <a id="top-link" href="https://github.com/EmilErasmus" target="_blank">
-          GitHub
-        </a>
+
+        <div id="top-links">
+          <a href="https://github.com/EmilErasmus" target="_blank"> GitHub </a>
+          |
+          <a href="#contact">Contact</a>
+        </div>
+        
       </div>
     </header>
 
     <nav id="nav-bar">
-      <div id="nav-div">
-        <ul id="nav-list">
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
+      <ul id="flex-container">
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
-    <br />
 
     <main>
       <article>
@@ -93,7 +95,9 @@
               Udemy
             </a>
           </h3>
-          <p class="edu-text">Fundamentals in Python and programming, 2022-2023</p>
+          <p class="edu-text">
+            Fundamentals in Python and programming, 2022-2023
+          </p>
           <h3>The Bay Academy</h3>
           <p class="edu-text">High school, 2018-2020</p>
           <h3>The Durban Music School</h3>
@@ -136,8 +140,8 @@
           <label for="last-name"></label>
           <input
             type="text"
-            name="lastName"
-            id="lastName"
+            name="last-name"
+            id="last-name"
             placeholder="Surname *"
             autocomplete="off"
             required
@@ -190,6 +194,7 @@
         <p id="required">* Required field</p>
       </form>
 
+      <p id="footer-email">Emil Erasmus | lime.erasmus@gmail.com</p>
       <p id="footer-links">
         <a
           class="bottom-links"
