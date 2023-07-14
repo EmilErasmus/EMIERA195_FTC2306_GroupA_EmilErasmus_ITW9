@@ -1,15 +1,16 @@
 /* This stylesheet starts from the top of the html doc */
+/* This stylesheet implements a "mobile first" approach */
 
 body {
   margin: 0;
 }
 
-/* Header */
+/* =====Header===== */
 #banner {
   padding-top: 1em;
   text-align: center;
   background-color: rgb(79, 79, 79);
-  background-image: url("../images/hero4.jpg");
+  background-image: url("../images/hero-img.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -27,20 +28,16 @@ img {
   top: 0;
   background-color: rgb(0, 0, 0);
 }
-/* #nav-div {
-  display: flex;
-} */
-#nav-list {
+#flex-container {
   margin: 0;
   padding: 1em;
   list-style: none;
   display: flex;
-  align-items: center;
   justify-content: space-around;
 }
 /* =================================================================== */
 
-/* Main */
+/* =====Main===== */
 article {
   margin: 1em;
 }
@@ -121,7 +118,8 @@ button {
 }
 /* ================================================================ */
 
-/* General styling */
+
+/* =====General styling===== */
 a {
   text-decoration: none;
   color: white;
@@ -138,7 +136,9 @@ h1, h2 {
 }
 #top-text,
 #intro-text,
-#contact {
+#top-links,
+#contact,
+#footer-email {
   color: white;
 }
 .main-text, h3 {
@@ -169,7 +169,8 @@ h3,
 }
 /* ================================================================ */
 
-/* media queries */
+
+/* =====Media queries===== */
 @media (max-width: 768px) {
   /* Styles for screens smaller than 768px */
   img {
@@ -177,6 +178,7 @@ h3,
     height: auto;
   }
 }
+
 @media (min-width: 768px) and (max-width: 1024px) {
   /* Styles for screens between 769px and 1024px */
   #banner {
@@ -198,17 +200,13 @@ h3,
     margin: 0;
     text-align: left;
   }
-  #top-link {
+  #top-links {
     grid-column: span 2;
   }
   form {
     margin: 5% 20%;
     padding: 2% 0%;
   }
-  /* img {
-    max-width: 80%;
-    height: auto;
-  } */
 }
 
 @media (min-width: 1024px) {
@@ -234,11 +232,12 @@ h3,
     margin: 2.5em;
     text-align: left;
   }
-  #top-link {
+  #top-links {
+    font-size: 1.1em;
     grid-column: span 3;
   }
   aside {
-    margin-top: -1.2em;
+    margin-top: 0;
   }
   form {
     margin: 2% 30%;
