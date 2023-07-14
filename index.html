@@ -4,53 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Digital Resume</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header>
-      <h1>Emil Erasmus</h1>
-      <h2 id="job-title">Software Developer</h2>
+      <div id="banner" class="padding-bottom">
+        <div id="top-text">
+          <h1>Emil Erasmus</h1>
+          <h2 id="job-title">Software Developer</h2>
+        </div>
 
-      <picture>
-        <source
-          id="emil-cropped"
-          media="(max-width: 600px)"
-          srcset="images/emil-cropped.jpg"
-          alt="emil-cropped"
-        />
-        <img id="emil-full" src="images/emil.jpg" alt="emil-full" />
-      </picture>
+        <picture>
+          <source
+            id="emil-cropped"
+            media="(max-width: 600px)"
+            srcset="images/emil-cropped.jpg"
+            alt="emil-cropped"
+          />
+          <img id="emil-full" src="images/emil.jpg" alt="emil-full" />
+        </picture>
 
-      <p id="Intro-text">
-        Highly motivated and reliable professional with a passion for
-        development. Strong communication skills and a dedicated attitude
-        towards continuous learning and growth. Displaying adaptability to new
-        technologies and effective team collaboration, I consistently
-        demonstrate a strong work ethic, attention to detail, and a proactive
-        approach to problem-solving.
-      </p>
-
-      <nav id="nav-bar">
-        <ul>
-          <li>
-            <a href="#experience">Experience</a>
-          </li>
-          <li>
-            <a href="#education">Education</a>
-          </li>
-          <li>
-            <a href="#skills">Skills</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
+        <p id="intro-text">
+          Highly motivated and reliable professional with a passion for
+          development. Strong communication skills and a dedicated attitude
+          towards continuous learning and growth. Displaying adaptability to new
+          technologies and effective team collaboration, I consistently
+          demonstrate a strong work ethic, attention to detail, and a proactive
+          approach to problem-solving.
+        </p>
+        <a id="top-link" href="https://github.com/EmilErasmus" target="_blank">
+          GitHub
+        </a>
+      </div>
     </header>
+
+    <nav id="nav-bar">
+      <div id="nav-div">
+        <ul id="nav-list">
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
     <br />
 
     <main>
       <article>
-        <section class="margin-bottom">
+        <section class="padding-bottom">
           <h2 id="experience">Experience</h2>
           <h3>Audio Technician, freelance</h3>
           <p class="main-text">
@@ -68,40 +70,38 @@
           </p>
         </section>
 
-        <section class="margin-bottom">
+        <section class="padding-bottom">
           <h2 id="education">Education & Learning</h2>
           <h3>
             Intro To Web at
-            <a href="https://www.codespace.co.za/" target="_blank">
+            <a
+              class="external-links"
+              href="https://www.codespace.co.za/"
+              target="_blank"
+            >
               CodeSpace
             </a>
           </h3>
-          <p class="main-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
+          <p class="edu-text">Web development and design, June 2023</p>
           <h3>
-            The Modern Python 3 Bootcamp at
-            <a href="https://www.udemy.com/" target="_blank"> Udemy </a>
+            The Modern Python 3 Bootcamp with
+            <a
+              class="external-links"
+              href="https://www.udemy.com/"
+              target="_blank"
+            >
+              Udemy
+            </a>
           </h3>
-          <p class="main-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
+          <p class="edu-text">Fundamentals in Python and programming, 2022-2023</p>
+          <h3>The Bay Academy</h3>
+          <p class="edu-text">High school, 2018-2020</p>
+          <h3>The Durban Music School</h3>
+          <p class="edu-text">Performance in flute, 2012-2017</p>
         </section>
       </article>
 
-      <aside class="margin-bottom">
+      <aside>
         <h2 id="skills">Languages & Skills</h2>
         <ul>
           <li>HTML</li>
@@ -121,7 +121,7 @@
         action="https://formsubmit.co/d4e216f67ff07c9fd4df50b00f67ec19"
         method="post"
       >
-        <p>
+        <p class="form-element">
           <label for="first-name"></label>
           <input
             type="text"
@@ -132,7 +132,7 @@
             required
           />
         </p>
-        <p>
+        <p class="form-element">
           <label for="last-name"></label>
           <input
             type="text"
@@ -143,7 +143,7 @@
             required
           />
         </p>
-        <p>
+        <p class="form-element">
           <label for="email"></label>
           <input
             type="email"
@@ -153,7 +153,7 @@
             required
           />
         </p>
-        <p>
+        <p class="form-element">
           <label for="phone"></label>
           <input
             type="tel"
@@ -163,9 +163,12 @@
             pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
           />
         </p>
-        <p>
+        <p class="form-element">
           <label for="subject"></label>
           <select name="_subject" id="subject">
+            <option value="Subject" disabled selected hidden>
+              Select a topic
+            </option>
             <option value="Business">Business</option>
             <option value="Employment">Employment</option>
             <option value="Discussion">Discussion</option>
@@ -173,35 +176,34 @@
         </p>
 
         <label for="message"></label>
-        <br />
         <textarea
           name="message"
           id="message"
-          rows="15"
           placeholder="Message me (optional)"
         ></textarea>
-
-        <div class="form-button">
+        <br />
+        <br />
+        <div id="form-button">
           <button type="submit">Submit</button>
         </div>
 
-        <p>* Required field</p>
+        <p id="required">* Required field</p>
       </form>
 
       <p id="footer-links">
         <a
-          class="bottomLinks"
+          class="bottom-links"
           href="https://www.linkedin.com/in/emil-erasmus-333363275"
           target="_blank"
         >
-          LinkedIn
+          <img class="linkedin-img" src="images/linkedin.png" alt="LinkedIn" />
         </a>
         <a
-          class="bottomLinks"
+          class="bottom-links"
           href="https://github.com/EmilErasmus"
           target="_blank"
         >
-          GitHub
+          <img class="github-img" src="images/github.png" alt="GitHub" />
         </a>
       </p>
     </footer>
